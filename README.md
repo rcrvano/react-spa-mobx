@@ -1,25 +1,42 @@
-Task 2. “Time for shopping!”
+Test SPA Application
 ---------------------------
 
-Sometimes we all need to choose and buy something online, but we all know how time consuming it is - let’s try to automate it in some way. Your task is to implement a little helper using any language that does the following:
+## Features
+- React
+- TypeScript
+- MobX
+- i18n
+- Authorization
+- Modular structure
 
-- Parse an online shop’s catalog (any shop you like)
+## Installation and usage 
 
-- Identify products you need based on any criteria you can come up with (e.g. size, price, color, type, etc.)
+### Docker image
+- Clone or download this repository.
+- Install Docker. Please note that you may need sudo to run Docker commands.
+- Build image:
+```bash
+docker build ./ -t test-spa-app
+```
+- Start on port 8000: 
+```bash
+docker run -d --name test-spa-app -p 8000:80 test-spa-app
+```
 
-- Store results in an SQLite database (e.g. id, title, price, link to the product’s page)
-
-- Optionally save product images
-
-Requirements:
-
-- You can use any publicly available API or library
-
-- Parsing should be performed on HTML page and not on machine-readable format
+### Running locally
+- Clone or download this repository.
+- Install necessary requirements: 
+```bash
+yarn install
+```
+- Start on port 5001:
+```bash
+yarn start
+```
 
 Demo
 ---------------------------
-You can find demo [here](http://sidorov.net:3001)
+You can find demo [here](http://test-spa-app.sidorov.net)
 
 Realization
 ---------------------------
@@ -38,22 +55,4 @@ The main parsing script for ETSY.com you can find here
 
 
 Client side is implemented using jQuery, Bootstrap & Bootstrap tables
-
-
-
-Installation
----------------------------
-1) Clone from git repository
-
-2) Run
-
-``` npm install ```
-
-3) After that
-
-``` npm start ```
-
-4) Open 
-
-``` http://localhost:3001/ ```
 
