@@ -1,4 +1,4 @@
-Test SPA Application
+Test Single Page Application
 ---------------------------
 
 ## Demo
