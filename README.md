@@ -7,7 +7,7 @@ You can find demo [here](http://spa.sidorov.net)
 - password: TestPassword123_
 
 ## Features
-- React
+- [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [MobX](https://mobx.js.org/)
 - [i18n](https://react.i18next.com/)
