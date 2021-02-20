@@ -2,7 +2,7 @@ Test Single Page Application
 ---------------------------
 
 ## Demo
-You can find demo [here](http://test-spa-app.sidorov.net)
+You can find demo [here](http://spa.sidorov.net)
 - login: test@mail.ru
 - password: TestPassword123_
 
