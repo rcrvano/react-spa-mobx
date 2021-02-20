@@ -3,6 +3,8 @@ Test SPA Application
 
 ## Demo
 You can find demo [here](http://test-spa-app.sidorov.net)
+- login: test@mail.ru
+- password: TestPassword123_
 
 ## Features
 - React
