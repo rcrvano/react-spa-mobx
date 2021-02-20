@@ -21,9 +21,9 @@ You can find demo [here](http://test-spa-app.sidorov.net)
 ```bash
 docker build ./ -t test-spa-app
 ```
-- Start on port 8000: 
+- Start on port 5001: 
 ```bash
-docker run -d --name test-spa-app -p 8000:80 test-spa-app
+docker run -d --name test-spa-app -p 5001:80 test-spa-app
 ```
 
 ### Running locally
