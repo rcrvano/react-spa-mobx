@@ -1,6 +1,9 @@
 Test SPA Application
 ---------------------------
 
+## Demo
+You can find demo [here](http://test-spa-app.sidorov.net)
+
 ## Features
 - React
 - TypeScript
@@ -34,7 +37,4 @@ yarn install
 yarn start
 ```
 
-Demo
----------------------------
-You can find demo [here](http://test-spa-app.sidorov.net)
 
