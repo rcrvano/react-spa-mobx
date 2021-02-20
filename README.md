@@ -38,21 +38,3 @@ Demo
 ---------------------------
 You can find demo [here](http://test-spa-app.sidorov.net)
 
-Realization
----------------------------
-Following Node.js modules are used: 
-
-- Express.js for creating web-server, which provides two API methods (/all & /parse/etsy)
-
-- sqlite3 & bluebird for storing data in the SQLite3 database:
-
-- needle for fetch data from a remote host
-
-- cheerio for parsing HTML-page using jQuery-like syntax
-  
-The main parsing script for ETSY.com you can find here 
-[parsers/etsy.js](https://github.com/rcrvano/texel_task2/blob/master/parsers/etsy.js)
-
-
-Client side is implemented using jQuery, Bootstrap & Bootstrap tables
-
