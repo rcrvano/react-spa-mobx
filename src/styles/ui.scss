@@ -1,0 +1,155 @@
+/* fields */
+.ui.input>input {
+  border: 1px solid #1A237E;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  padding:9px;
+  color: #000000;
+
+}
+.error .ui.input>input {
+  border: 1px solid #D32F2F;
+}
+.field label {
+  display: block;
+  padding-left: 10px;
+  margin-bottom:4px;
+}
+.field.error label {
+  color:#D32F2F;
+}
+
+
+/* drop down */
+.ui.selection.dropdown {
+  height: 42px;
+}
+.ui.selection.active.dropdown:hover .menu,
+.ui.selection.active.dropdown:hover,
+.ui.selection.dropdown:hover {
+  border: 1px $color-blue-hover solid;
+}
+.ui.selection.active.dropdown .menu,
+.ui.selection.active.dropdown,
+.ui.selection.dropdown:focus,
+.ui.selection.dropdown {
+  border: 1px $color-blue solid;
+}
+.ui.selection.active.dropdown .menu {
+  border-top: 1px $color-blue solid !important;
+}
+
+
+
+/* buttons */
+.ui.button,
+.ui.button:focus {
+  background: #1A237E;
+  border-radius: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.ui.button:hover  {
+  background: #232FA9;
+  color: #FFFFFF;
+}
+.ui.button:active  {
+  background: #111755;
+  color: #FFFFFF;
+}
+
+
+/*tabs*/
+.ui.tabular.menu .active.item  {
+  background: $color-blue;
+  color:#ffffff;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+.ui.tabular.menu .item {
+  background: #FFFFFF;
+}
+.ui.tabular.menu .active.item:first-child,
+.ui.tabular.menu .item:first-child {
+  border-radius: $border-radius 0px 0px 0px !important;
+}
+.ui.tabular.menu .active.item:last-child,
+.ui.tabular.menu .item:last-child {
+  border-radius: 0px $border-radius 0px 0px !important;
+}
+.ui.tabular.menu .item {
+  border: 1px $color-blue solid !important;
+  border-right:0px !important;
+  padding:10px 50px;
+  color: #1A237E;
+}
+.ui.tabular.menu .item:last-child {
+  border-right: 1px $color-blue solid !important;
+}
+.ui.tabular.menu .active.item {
+  border-radius: inherit !important;
+}
+.ui.tabular.menu {
+  border-bottom:0px;
+}
+@media only screen and (max-width: 767px) {
+  .ui.tabular.menu .item {
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+/*tables*/
+.ui.celled.table {
+}
+.ui.celled.table thead tr td {
+  background:$color-blue;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.ui.celled.table tbody tr td {
+  background:#fff;
+  border-left:0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+.ui.table {
+  border:0px;
+
+}
+.ui.celled.table thead tr td {
+  padding-top:0px;
+  padding-bottom:20px;
+}
+.ui.celled.table tr td:first-child, .ui.celled.table tr th:first-child {
+  padding-left:20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.table:not(.unstackable) thead tr {
+    padding-top:0px !important;
+    padding-bottom:10px !important;
+    background:$color-blue
+  }
+}
+

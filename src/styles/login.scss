@@ -1,0 +1,44 @@
+.auth-page {
+  max-width: 480px;
+  margin:0 auto;
+  border-radius:$border-radius;
+  background: #FFFFFF;
+}
+
+.auth-page .header {
+  background: $color-blue;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  padding:16px;
+  text-align:center;
+  border-radius: $border-radius $border-radius 0px 0px;
+  margin:0px;
+}
+
+.auth-page .content {
+  padding: 70px 30px;
+  max-width:310px;
+  margin:0 auto;
+}
+
+.auth-page .button {
+  margin-top:50px;
+}
+
+.auth-page .error-block {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #D32F2F;
+  text-align:center;
+  height: 16px;
+  margin-top:6px;
+}

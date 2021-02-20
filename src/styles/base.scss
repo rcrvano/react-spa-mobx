@@ -1,0 +1,145 @@
+html,
+body {
+  height: 100%;
+  background: $color-grey;
+}
+
+#root {
+  height: 100%;
+
+  #app {
+    height: 100%;
+  }
+}
+
+.mt-16 {
+  margin-top:16px;
+}
+.pt-16 {
+  padding-top:16px;
+}
+hr {
+  border-top: #E1E1E1;
+  width:90%
+}
+
+
+.ui.header {
+  padding: 40px
+}
+.ui.header .title {
+  font-family: Open Sans;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000000;
+}
+
+.ui.header .title {
+  float: left;
+}
+.ui.header .logout {
+  float: right;
+}
+.ui.header .logout button {
+  border: 1px solid #1A237E;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #1A237E;
+  background:#E5E5E5;
+
+  padding: 5px 40px;
+}
+.ui.header:after {
+  content:"";
+  display: block;
+  clear:both;
+}
+
+
+.module-content-radius {
+  border-radius:0px $border-radius $border-radius $border-radius !important;
+  border: 0px;
+  background:#fff;
+}
+.module-content-radius:before {
+  display:block;
+  content: '';
+  background:$color-blue;
+  border-radius:0px $border-radius 0px 0px !important;
+
+  height:$border-radius;
+}
+.module-content-radius:after {
+  display:block;
+  content: '';
+  background:$color-white;
+  height:$border-radius;
+  border-radius:0px 0px $border-radius $border-radius !important;
+
+  border-bottom: 1px $color-grey solid;
+}
+.module-header {
+  background:$color-blue;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: $color-white;
+  text-align:center;
+  padding-bottom:20px;
+}
+
+
+
+
+/* pagination */
+.pagination {
+  width:150px;
+  margin:0 auto;
+}
+.pagination .nav {
+  width: 80px;
+  font-size: 16px;
+  color: #000000;
+}
+.pagination .back,
+.pagination .next {
+  cursor:pointer;
+}
+.pagination .nav div {
+  float:left;
+
+}
+.pagination .nav div:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+.pagination .ui.input > input {
+  width: 26px;
+  height: 22px;
+  border: 1px solid rgba(25,36,126, 0.3);
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding:0px;
+  text-align:center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+}
+
+
+.no-data {
+  padding: 30px
+}
+
+.loading {
+  padding: 30px
+}

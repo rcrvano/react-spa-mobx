@@ -1,0 +1,13 @@
+table.table-scrollable {
+  width:750px;
+}
+table.table-scrollable  thead,
+table.table-scrollable  tbody { display: block; }
+
+table.table-scrollable tbody {
+  height: 320px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+table.table-scrollable td {width:230px!important}
+table.table-scrollable td.collapsing {width:60px !important}

@@ -1,0 +1,37 @@
+.calculator-form {
+  max-width:430px;
+  margin:0 auto;
+  padding: 40px 0px;
+}
+
+.calculator-form .field {
+  width: 80px;
+}
+
+.calculator-form .ui.selection.dropdown {
+  min-width:80px;
+}
+
+.calculator-form input {
+  min-width:80px;
+}
+
+.calculator-result {
+  max-width:430px;
+  margin:0 auto;
+  padding: 25px 0px;
+  height:90px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+}
+
+.calculator-result .title {
+  font-size: 12px;
+}
+
+.calculator-result .value {
+  font-size: 20px;
+}
