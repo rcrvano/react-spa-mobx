@@ -11,8 +11,8 @@ const LoginLayout: React.FC<{}> = ({ children }) => {
   const { t } = useTranslation();
   const history = useHistory();
 
-  const [email, setEmail] = useState<string>();
-  const [password, setPassword] = useState<string>();
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
   const [emailError, setEmailError] = useState<string>("");
   const [passwordError, setPasswordError] = useState<string>("");
   const [commonError, setCommonError] = useState<string>("");

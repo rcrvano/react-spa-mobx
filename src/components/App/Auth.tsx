@@ -12,7 +12,6 @@ const Layout: React.FC<{}> = ({ children }) => {
     } else {
       history.push("/login")
     }
-    return null;
   }
 
   return (

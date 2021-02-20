@@ -40,8 +40,8 @@ export const Quotes: React.FC<{ }> = () => {
           </Table.Row>
         </Table.Header>
         <Table.Body>
-          {quotesStore.quotes && quotesStore.quotes.length && quotesStore.quotes.map(quote => (
-            <Table.Row>
+          {quotesStore.quotes && quotesStore.quotes.length && quotesStore.quotes.map((quote, key) => (
+            <Table.Row key={key}>
               <Table.Cell collapsing onClick={()=>{handleFavourite(quote)}}>
                 <img alt="favourite" src={require(`styles/img/star${quote.favourite ? "_active" : ""}.png`)}/>
               </Table.Cell>
