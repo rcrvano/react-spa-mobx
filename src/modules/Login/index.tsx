@@ -59,7 +59,7 @@ const LoginLayout: React.FC<{}> = ({ children }) => {
     }
 
     await authStore.loginByPassword({email, password});
-    if (authStore.isAuthenticated()) {
+    if (authStore.isAuthenticated) {
       history.push("/quotes");
     }
   };

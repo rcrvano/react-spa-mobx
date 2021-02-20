@@ -7,7 +7,7 @@ const Layout: React.FC<{}> = ({ children }) => {
   const { authStore } = useStores();
 
   if (history.location.pathname === "/") {
-    if (authStore.isAuthenticated()) {
+    if (authStore.isAuthenticated) {
       history.push("/quotes")
     } else {
       history.push("/login")

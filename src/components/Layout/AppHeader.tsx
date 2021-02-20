@@ -21,7 +21,7 @@ export const AppHeader: React.FC<{ }> = () => {
     return (
       <Header as="div">
         <div className={"title"}>{t("title")}</div>
-        {authStore.isAuthenticated() ? (
+        {authStore.isAuthenticated ? (
           <div className={"logout"}>
             <Button
               onClick={logoutHandler}

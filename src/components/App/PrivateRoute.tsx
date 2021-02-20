@@ -14,7 +14,7 @@ const PrivateRoute: React.FC<PrivateRouteProps> = (props: PrivateRouteProps) => 
   } = props;
 
   return useObserver(() => {
-    if (!authStore.isAuthenticated()) {
+    if (!authStore.isAuthenticated) {
       return (
         <Route
           render={(): JSX.Element => (

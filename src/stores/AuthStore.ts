@@ -9,6 +9,9 @@ class AuthStore implements StoreInterface {
   apiClient: WebApi;
 
   @observable
+  isAuthenticated: boolean | undefined = false;
+
+  @observable
   loginError: string | undefined;
 
   @observable
@@ -25,6 +28,9 @@ class AuthStore implements StoreInterface {
     this.rootStore = rootStore;
     this.apiClient = rootStore.apiClient;
 
+    runInAction(() => {
+      this.isAuthenticated = localStorage.getItem("isAuth") !== null;
+    });
   }
 
   @action.bound
@@ -42,7 +48,7 @@ class AuthStore implements StoreInterface {
       runInAction(() => {
         switch (result) {
           case "ok":
-            //this.isAuthenticated = true;
+            this.isAuthenticated = true;
             localStorage.setItem("isAuth", "1");
             break;
           case "error":
@@ -67,13 +73,9 @@ class AuthStore implements StoreInterface {
   async logout(): Promise<void> {
     runInAction(() => {
       localStorage.removeItem("isAuth")
+      this.isAuthenticated = false
     });
   };
-
-  @action.bound
-  isAuthenticated (): boolean {
-    return localStorage.getItem("isAuth")  !== null;
-  }
 
 }
 
