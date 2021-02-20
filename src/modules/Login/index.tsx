@@ -5,7 +5,6 @@ import { useStores } from 'stores';
 import { Form, Button, Input } from 'semantic-ui-react';
 import { useHistory } from 'react-router-dom';
 
-
 const LoginLayout: React.FC<{}> = ({ children }) => {
   const { authStore } = useStores();
   const { t } = useTranslation();
@@ -17,12 +16,12 @@ const LoginLayout: React.FC<{}> = ({ children }) => {
   const [passwordError, setPasswordError] = useState<string>("");
   const [commonError, setCommonError] = useState<string>("");
 
-
   const emailChangeHandler = (_ev: SyntheticEvent, { value }: { value: string }): void => {
     setEmail(value);
     setCommonError("");
     setEmailError("");
   }
+
   const passwordChangeHandler = (_ev: SyntheticEvent, { value }: { value: string }): void => {
     setPassword(value);
     setCommonError("");
@@ -112,12 +111,10 @@ const LoginLayout: React.FC<{}> = ({ children }) => {
           <div className="error-block">
             {getErrorMessage()}
           </div>
-
         </div>
       </div>
     );
   });
 }
-
 
 export default LoginLayout;

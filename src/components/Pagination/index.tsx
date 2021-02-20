@@ -19,12 +19,14 @@ export const Pagination: React.FC<PaginationProps> = ({limit, total, changePage}
       changePage(page-1);
     }
   }
+
   const nextHandler = (): void => {
     if (historyStore.deals && (page+1)*limit< historyStore.deals.length) {
       setPage(page => page + 1)
       changePage(page+1);
     }
   }
+
   const changePageHandler= (_ev: SyntheticEvent, { value: page }: { value: number }): void => {
     if (historyStore.deals && page>=0 && (page-1)*limit<historyStore.deals.length) {
       setPage(page-1);

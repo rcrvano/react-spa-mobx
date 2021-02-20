@@ -54,14 +54,17 @@ class HistoryStore implements StoreInterface {
         const index = page*this.limit + j
         const item = deals[index];
         sameAssets[item.asset] = sameAssets[item.asset] ? sameAssets[item.asset] + 1 : 1;
-        if (sameAssets[item.asset] > 2) { //не более двух одинаковых активов
+        if (sameAssets[item.asset] > 2) {
+          //не более двух одинаковых активов
           deals.splice (index, 1);
-        } else if (item.profit<0 && countUnprofitable++ >= 2) { //не больше 2-х убыточных сделок;
+        } else if (item.profit<0 && countUnprofitable++ >= 2) {
+          //не больше 2-х убыточных сделок;
           deals.splice(index, 1);
         }
         if (item.profit>100) { countGoodProfitable++ };
       }
-      if (countGoodProfitable<1) { //хотя бы 1-2 сделки с прибыльностью больше 100 долларов
+      if (countGoodProfitable<1) {
+        //хотя бы 1-2 сделки с прибыльностью больше 100 долларов
         const prevIndex = (page+1)*this.limit -1;
         while (deals[prevIndex] && deals[prevIndex].profit<100) {
           deals.splice(prevIndex, 1);

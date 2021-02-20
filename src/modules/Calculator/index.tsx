@@ -9,17 +9,15 @@ export const Quotes: React.FC<{ }> = () => {
   const { quotesStore } = useStores();
   const { t } = useTranslation();
 
+  const [result, setResult] = useState<string>("");
+  const [amount, setAmount] = useState<number>();
+  const [fromQuote, setFromQuote] = useState<string>();
+  const [toQuote, setToQuote] = useState<string>();
 
   useEffect(() => {
     quotesStore.fetchQuotes();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-
-  const [result, setResult] = useState<string>("");
-  const [amount, setAmount] = useState<number>();
-  const [fromQuote, setFromQuote] = useState<string>();
-  const [toQuote, setToQuote] = useState<string>();
 
   const handleFromQuoteChange = (_ev: SyntheticEvent, { value }: { value?: string }): void => {
     setResult("");
@@ -64,13 +62,11 @@ export const Quotes: React.FC<{ }> = () => {
     });
   }
 
-
   const getResultHandler = (): void => {
     const item = quotesStore.quotes ? quotesStore.quotes.find(q=>q.asset === `${fromQuote}/${toQuote}`) : null;
     if (!item || !amount) setResult("0");
     else setResult((parseFloat(item.quote)*amount).toFixed(2) );
   }
-
 
   return useObserver(() => {
     if (quotesStore.isFetchInProgress) {
@@ -127,7 +123,6 @@ export const Quotes: React.FC<{ }> = () => {
                 >
                   {t('calculator.calc')}
                 </Button>
-
               </Grid.Column>
             </Grid.Row>
           </Grid>

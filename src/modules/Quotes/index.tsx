@@ -6,7 +6,6 @@ import { useStores } from 'stores';
 import { Table } from 'semantic-ui-react'
 import moment from "moment";
 
-
 export const Quotes: React.FC<{ }> = () => {
   const { quotesStore } = useStores();
   const { t } = useTranslation();
@@ -50,7 +49,6 @@ export const Quotes: React.FC<{ }> = () => {
               <Table.Cell>{moment(quote.startDate).format("D.MM.YYYY")}</Table.Cell>
             </Table.Row>
           ))}
-
         </Table.Body>
       </Table>
     );

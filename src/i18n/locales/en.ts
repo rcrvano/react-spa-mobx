@@ -43,6 +43,5 @@ export default {
       finishQuote: "Quote",
       profit: "Profit",
     }
-
   },
 };

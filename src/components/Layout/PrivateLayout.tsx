@@ -21,7 +21,6 @@ const Layout: React.FC<{}> = ({ children }) => {
     setCurrentIndex(Number(activeIndex));
   }
 
-
   return (
     <div style={{maxWidth:750, margin:"0 auto"}}>
       <Tab panes={menuItems} activeIndex={currentIndex} onTabChange={tabChangeHandler} />

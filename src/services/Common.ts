@@ -1,7 +1,6 @@
 import { AxiosInstance } from 'axios';
 import { QuotesResponseInterface, HistoryResponseInterface } from 'interfaces';
 
-
 class Common {
   api: AxiosInstance;
 

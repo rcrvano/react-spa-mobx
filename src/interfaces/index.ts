@@ -13,13 +13,10 @@ export interface RootStoreInterface {
   authStore: StoreInterface;
 }
 
-
-
 export interface AuthResponse {
   result: string;
   error: string;
 }
-
 
 export interface QuoteInterface {
   asset: string,
@@ -33,9 +30,6 @@ export interface QuotesResponseInterface {
   error?: string;
   assets?: Array<QuoteInterface>;
 }
-
-
-
 
 export interface HistoryInterface {
   asset: string,

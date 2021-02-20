@@ -28,7 +28,6 @@ class Auth {
 
     return {result, error};
   }
-
 }
 
 export default Auth;

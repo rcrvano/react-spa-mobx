@@ -43,6 +43,5 @@ export default {
       finishQuote: "Котировка",
       profit: "Прибыль",
     }
-
   },
 };

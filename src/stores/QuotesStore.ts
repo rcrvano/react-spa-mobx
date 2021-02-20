@@ -20,7 +20,6 @@ class QuotesStore implements StoreInterface {
   constructor(rootStore: RootStoreInterface) {
     this.rootStore = rootStore;
     this.apiClient = rootStore.apiClient;
-
   }
 
   @action.bound

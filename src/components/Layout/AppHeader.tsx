@@ -6,7 +6,6 @@ import { Button } from 'semantic-ui-react';
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
 
-
 export const AppHeader: React.FC<{ }> = () => {
   const { authStore } = useStores();
   const { t } = useTranslation();

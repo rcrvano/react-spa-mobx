@@ -35,7 +35,6 @@ export class RootStore implements RootStoreInterface {
       throw new Error('Missing API baseURL');
     }
 
-
     this.apiClient = new WebApi({
       baseURL: process.env.REACT_APP_API_BASE_URL
     });

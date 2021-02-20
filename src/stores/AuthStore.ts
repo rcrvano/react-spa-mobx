@@ -2,7 +2,6 @@ import { observable, action, runInAction } from 'mobx';
 import WebApi, { getErrorMessage } from 'services';
 import { StoreInterface, RootStoreInterface } from 'interfaces';
 
-
 class AuthStore implements StoreInterface {
   rootStore: RootStoreInterface;
 
@@ -22,7 +21,6 @@ class AuthStore implements StoreInterface {
 
   @observable
   isLogoutInProcess = false;
-
 
   constructor(rootStore: RootStoreInterface) {
     this.rootStore = rootStore;
@@ -76,8 +74,6 @@ class AuthStore implements StoreInterface {
       this.isAuthenticated = false
     });
   };
-
 }
-
 
 export default AuthStore;

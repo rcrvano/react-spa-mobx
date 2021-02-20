@@ -57,13 +57,11 @@ export const Quotes: React.FC<{ }> = () => {
             ))}
           </Table.Body>
         </Table>
-
         <Pagination
           changePage={changePageHandler}
           limit={limit}
           total={historyStore.deals.length}/>
       </div>
-
     );
   });
 };
