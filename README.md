@@ -8,9 +8,9 @@ You can find demo [here](http://spa.sidorov.net)
 
 ## Features
 - React
-- TypeScript
+- [TypeScript](https://www.typescriptlang.org/)
 - [MobX](https://mobx.js.org/)
-- i18n
+- [i18n](https://react.i18next.com/)
 - [Semantic UI](https://semantic-ui.com/)
 - Authorization
 - Modular structure
