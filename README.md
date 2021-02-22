@@ -1,18 +1,21 @@
-Test SPA Application
+Test Single Page Application
 ---------------------------
 
 ## Demo
-You can find demo [here](http://test-spa-app.sidorov.net)
+You can find demo [here](http://spa.sidorov.net)
 - login: test@mail.ru
 - password: TestPassword123_
 
 ## Features
-- React
-- TypeScript
-- MobX
-- i18n
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [MobX](https://mobx.js.org/)
+- [i18n](https://react.i18next.com/)
+- [Semantic UI](https://semantic-ui.com/)
+- [SCSS](https://sass-lang.com/)
 - Authorization
 - Modular structure
+
 
 ## Installation and usage 
 
